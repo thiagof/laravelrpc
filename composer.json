@@ -1,5 +1,5 @@
 {
-    "name": "thiagof/laravelrpc",
+    "name": "cuctemeh/laravelrpc",
     "description": "JsonRPC Client/Server services for Laravel 5",
     "keywords": ["laravel", "jsonrpc", "rpc", "json-rpc", "client", "server"],
     "license": "MIT",
@@ -9,10 +9,16 @@
             "email": "thiago@internetbudi.com.br"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/matasarei/JsonRPC"
+        }
+    ],
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": ">=5.0",
-        "fguillot/json-rpc": "1.0.*"
+        "fguillot/json-rpc": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0",
@@ -27,6 +33,5 @@
         "classmap": [
             "tests/TestCase.php"
         ]
-    },
-    "minimum-stability": "stable"
+    }
 }
